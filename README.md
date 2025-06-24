@@ -95,13 +95,13 @@ To run this project locally:
 2. **Install dependencies:**
 
    ```bash
-   npm install
+   bun install
    ```
 
 3. **Start the development server:**
 
    ```bash
-   npm run dev
+   bun dev
    ```
 
    The application will be available at `http://localhost:4321`.
