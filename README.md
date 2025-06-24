@@ -1,9 +1,6 @@
-# 🌐 Personal Portfolio
+# 🌐 Allison Cretel's Portfolio
 
-Welcome to my personal portfolio demo repository! This project is a demonstration of what a personal portfolio could look like. It showcases various aspects of web development, including my work, skills, and projects.
-
-- You can view the deployed project at the following URL: [https://sorolla.netlify.app/](https://sorolla.netlify.app/)
-- Astro web templates: https://astro.build/themes/details/sorollaportfolio/
+Welcome to my personal portfolio! This website showcases my work as an engineer and student at Shopify, highlighting my projects, skills, and thoughts on technology.
 
 ## 📂 Project Structure
 
@@ -34,7 +31,7 @@ src
 │   ├── Header.astro
 │   ├── HeaderLink.astro
 │   ├── Hero.astro
-│   └── WhatIDo.astro
+│   └── Blog.astro
 ├── consts.ts
 ├── content
 │   └── blog
@@ -91,20 +88,20 @@ To run this project locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/jramma/sorollaportfolio.git
-   cd sorollaportfolio
+   git clone [your-repo-url]
+   cd allison-cretel-portfolio
    ```
 
 2. **Install dependencies:**
 
    ```bash
-   bun install
+   npm install
    ```
 
 3. **Start the development server:**
 
    ```bash
-   bun dev
+   npm run dev
    ```
 
    The application will be available at `http://localhost:4321`.
