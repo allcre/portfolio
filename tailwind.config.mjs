@@ -15,6 +15,7 @@ export default {
         pgreenHover: "10px 10px #ADF296",
         ppinkHover: "10px 10px #F396E5",
         pyellow: "7px 7px #F2CF96",
+        transparent: "10px 10px transparent",
       },
       colors: {
         pblue: "#96C7F2",
