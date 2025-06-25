@@ -1,3 +1,5 @@
+# WIP - Some information is incorrect or missing!
+
 # 🌐 Allison Cretel's Portfolio
 
 Welcome to my personal portfolio! This website showcases my work as an engineer and student at Shopify, highlighting my projects, skills, and thoughts on technology.
@@ -115,3 +117,7 @@ To run this project locally:
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## 📄 Acknowledgements
+
+- [Sorolla Portfolio](https://github.com/jramma/sorollaportfolio) was used as a template for this project.

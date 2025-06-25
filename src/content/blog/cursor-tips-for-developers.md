@@ -1,7 +1,7 @@
 ---
 title: "Cursor tips that changed how I code"
 description: "Essential Cursor features and workflows that transformed my development process"
-icon: "computer"
+icon: "laptop"
 pubDate: "June 24 2025"
 heroImage: "/src/assets/euro.jpg"
 ---
@@ -12,14 +12,7 @@ There are a lot of new AI tools out there, and after experimenting with what's a
 
 ### AI-powered development tools
 
-While there are many AI coding assistants available, I've found that integrating the right tools into my workflow makes a huge difference. For personal website development, I particularly value tools that can:
-
-- Read and understand project structure and dependencies
-- Help with debugging across different frameworks (like Astro, React, or vanilla JS)
-- Assist with CSS/Tailwind styling and responsive design
-- Review code for best practices and performance optimizations
-
-When I'm getting started on a new feature or fixing a bug, I'll describe the issue to my AI assistant and let it help analyze the codebase. When I'm in the review stage of my work, AI can help spot potential issues and suggest improvements.
+The game-changer has been MCP (Model Context Protocol) servers, which let AI assistants connect to external services and data sources. I've been experimenting with tools that can read GitHub issues directly, access calendar data, and interact with file systems. For example, when working on bug fixes, I can have my AI assistant pull the actual GitHub issue details, understand the reported problem, and even check related issues or PRs. This eliminates the need to constantly copy-paste issue descriptions or manually provide context about what I'm working on.
 
 ### @ Symbols for Context
 
