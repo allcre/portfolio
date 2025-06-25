@@ -6,6 +6,10 @@ const posts = (await getCollection("blog")).sort(
 import FormattedDate from "@/components/FormattedDate.astro";
 import { Icon } from "astro-icon/components";
 
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + "/";
+
 const bgClasses = ["bg-pgreen", "bg-pblue", "bg-ppink", "bg-pyellow"];
 
 const getRandomClass = () => {
@@ -23,7 +27,7 @@ const getRandomClass = () => {
         return (
           <li class="group">
             <a
-              href={`/blog/${post.id}/`}
+              href={`${baseUrl.slice(0, -1)}/blog/${post.id}/`}
               class="flex gap-6 p-6 rounded-3xl border-1 border-black shadow-card hover:shadow-hover transition bg-white group"
             >
               <div class="flex-shrink-0">
