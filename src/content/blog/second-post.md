@@ -2,7 +2,7 @@
 title: 'Madness enlightenment'
 description:   'Foto de <a class="underline" href="https://unsplash.com/es/@adrigeo_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Adrianna Geo</a> en <a href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline">Unsplash</a>
   '
-icon: "4"
+icon: "laptop"
 pubDate: 'Jul 15 2022'
 heroImage: "/src/assets/fran.jpg"
 ---

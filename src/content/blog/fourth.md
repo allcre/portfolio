@@ -3,7 +3,7 @@ title: 'Third post'
 description:  '
         Foto de <a  class="underline" href="https://unsplash.com/es/fotos/flores-rojas-azules-y-blancas-5TK1F5VfdIk">Europeana </a> en <a  href="https://unsplash.com/es/fotos/flores-rojas-azules-y-blancas-5TK1F5VfdIk"  class="underline">Unsplash</a>
 '
-icon: '2'
+icon: 'sun'
 pubDate: 'Jul 08 2022'
 heroImage: "/src/assets/fran.jpg"
 ---
