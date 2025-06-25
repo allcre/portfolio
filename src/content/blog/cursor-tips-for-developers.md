@@ -1,12 +1,12 @@
 ---
-title: "Cursor tips that changed how I code for personal projects"
-description: "Essential Cursor features and workflows that transformed my development process, with examples from building personal websites and side projects."
-icon: "💻"
-pubDate: "Jan 15 2025"
-heroImage: "/src/assets/coding-cursor.jpg"
+title: "Cursor tips that changed how I code"
+description: "Essential Cursor features and workflows that transformed my development process"
+icon: "computer"
+pubDate: "June 24 2025"
+heroImage: "/src/assets/euro.jpg"
 ---
 
-There are a lot of new AI tools out there, and after experimenting with what's available for my personal projects, here's what I've found makes the most difference in my day-to-day development work:
+There are a lot of new AI tools out there, and after experimenting with what's available, here's what I've found makes the most difference in my day-to-day development work:
 
 ## What I use every day
 
