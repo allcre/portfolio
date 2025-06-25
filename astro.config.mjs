@@ -8,7 +8,7 @@ import icon from "astro-icon";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://yourusername.github.io',
-  base: '/demo-portfolio',
+  base: '/personal-website',
   output: 'static',
   integrations: [mdx(), sitemap(), tailwind(), icon()],
 });
