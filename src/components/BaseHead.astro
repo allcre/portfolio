@@ -15,6 +15,10 @@ const {
   description,
   image = `${import.meta.env.BASE_URL}screenshot.jpg`,
 } = Astro.props;
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + "/";
 ---
 
 <!-- Global Metadata -->
@@ -25,85 +29,95 @@ const {
 <!-- Font-face declarations with proper base URL handling -->
 <style
   set:html={`
-@font-face {
-  font-family: 'Alexandria';
-  src: url('${import.meta.env.BASE_URL}fonts/Alexandria-Black.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Alexandria-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Alexandria';
+    src: url('${baseUrl}fonts/Alexandria-Black.woff2') format('woff2'),
+         url('${baseUrl}fonts/Alexandria-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Alexandria';
-  src: url('${import.meta.env.BASE_URL}fonts/Alexandria-Bold.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Alexandria-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Alexandria';
+    src: url('${baseUrl}fonts/Alexandria-Bold.woff2') format('woff2'),
+         url('${baseUrl}fonts/Alexandria-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Alexandria';
-  src: url('${import.meta.env.BASE_URL}fonts/Alexandria-ExtraBold.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Alexandria-ExtraBold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Alexandria';
+    src: url('${baseUrl}fonts/Alexandria-ExtraBold.woff2') format('woff2'),
+         url('${baseUrl}fonts/Alexandria-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Alexandria';
-  src: url('${import.meta.env.BASE_URL}fonts/Alexandria-ExtraLight.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Alexandria-ExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Alexandria';
+    src: url('${baseUrl}fonts/Alexandria-ExtraLight.woff2') format('woff2'),
+         url('${baseUrl}fonts/Alexandria-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Alexandria';
-  src: url('${import.meta.env.BASE_URL}fonts/Alexandria-Light.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Alexandria-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Alexandria';
+    src: url('${baseUrl}fonts/Alexandria-Light.woff2') format('woff2'),
+         url('${baseUrl}fonts/Alexandria-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Alexandria';
-  src: url('${import.meta.env.BASE_URL}fonts/Alexandria-Medium.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Alexandria-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Alexandria';
+    src: url('${baseUrl}fonts/Alexandria-Medium.woff2') format('woff2'),
+         url('${baseUrl}fonts/Alexandria-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Alexandria';
-  src: url('${import.meta.env.BASE_URL}fonts/Alexandria-Regular.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Alexandria-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Alexandria';
+    src: url('${baseUrl}fonts/Alexandria-Regular.woff2') format('woff2'),
+         url('${baseUrl}fonts/Alexandria-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Alexandria';
-  src: url('${import.meta.env.BASE_URL}fonts/Alexandria-SemiBold.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Alexandria-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Alexandria';
+    src: url('${baseUrl}fonts/Alexandria-SemiBold.woff2') format('woff2'),
+         url('${baseUrl}fonts/Alexandria-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Alexandria';
-  src: url('${import.meta.env.BASE_URL}fonts/Alexandria-Thin.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Alexandria-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Alexandria';
+    src: url('${baseUrl}fonts/Alexandria-Thin.woff2') format('woff2'),
+         url('${baseUrl}fonts/Alexandria-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
 
-@font-face {
-  font-family: 'Kablammo';
-  src: url('${import.meta.env.BASE_URL}fonts/Kablammo-Regular.woff2') format('woff2'),
-    url('${import.meta.env.BASE_URL}fonts/Kablammo-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+  @font-face {
+    font-family: 'Kablammo';
+    src: url('${baseUrl}fonts/Kablammo-Regular.woff2') format('woff2'),
+         url('${baseUrl}fonts/Kablammo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 `}
 ></style>
 
