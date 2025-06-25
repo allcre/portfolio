@@ -1,13 +1,18 @@
 ---
 import Link from "./HeaderLink.astro";
 import "../styles/hamburgers.css";
+
+const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + "/";
+const homeUrl = baseUrl.slice(0, -1) + "/";
 ---
 
 <header>
   <nav
     class="flex container mx-auto md:p-10 px-4 py-6 items-center justify-between"
   >
-    <a class="flex items-center gap-2" href="/">
+    <a class="flex items-center gap-2" href={homeUrl}>
       <p class="font-kablamo text-ppink text-4xl md:text-5xl">AC</p>
     </a>
     <ul class="items-center md:gap-8 text-nowrap hidden md:flex">
