@@ -1,4 +1,6 @@
 // @ts-check
+// Based on Sorolla Portfolio template by @jramma
+// Original: https://github.com/jramma/sorollaportfolio
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";

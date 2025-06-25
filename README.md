@@ -1,9 +1,6 @@
 # 🌐 Personal Portfolio
 
-Welcome to my personal portfolio demo repository! This project is a demonstration of what a personal portfolio could look like. It showcases various aspects of web development, including my work, skills, and projects.
-
-- You can view the deployed project at the following URL: [https://sorolla.netlify.app/](https://sorolla.netlify.app/)
-- Astro web templates: https://astro.build/themes/details/sorollaportfolio/
+Welcome to my personal portfolio! This project showcases various aspects of web development, including my work, skills, and projects. Built with modern web technologies for optimal performance and user experience.
 
 ## 📂 Project Structure
 
@@ -91,19 +88,23 @@ To run this project locally:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/jramma/sorollaportfolio.git
-   cd sorollaportfolio
+   git clone <your-repository-url>
+   cd personal-website
    ```
 
 2. **Install dependencies:**
 
    ```bash
+   npm install
+   # or
    bun install
    ```
 
 3. **Start the development server:**
 
    ```bash
+   npm run dev
+   # or 
    bun dev
    ```
 
@@ -118,3 +119,13 @@ To run this project locally:
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgments
+
+This portfolio is based on the excellent **Sorolla Portfolio** template created by [@jramma](https://github.com/jramma). 
+
+- **Original Template**: [sorollaportfolio](https://github.com/jramma/sorollaportfolio)
+- **Live Demo**: [sorolla.netlify.app](https://sorolla.netlify.app/)
+- **Astro Theme**: [astro.build/themes](https://astro.build/themes/details/sorollaportfolio/)
+
+Special thanks to the original creator for providing such a clean, modern, and well-structured portfolio template that serves as an excellent foundation for personal websites.
