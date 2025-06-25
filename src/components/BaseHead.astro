@@ -10,15 +10,11 @@ interface Props {
 }
 
 import { ClientRouter } from "astro:transitions";
-const {
-  title,
-  description,
-  image = `${import.meta.env.BASE_URL}screenshot.jpg`,
-} = Astro.props;
-
 const baseUrl = import.meta.env.BASE_URL.endsWith("/")
   ? import.meta.env.BASE_URL
   : import.meta.env.BASE_URL + "/";
+
+const { title, description, image = `${baseUrl}screenshot.jpg` } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -124,70 +120,70 @@ const baseUrl = import.meta.env.BASE_URL.endsWith("/")
 <!-- Font preloads -->
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Alexandria-Bold.woff2`}
+  href={`${baseUrl}fonts/Alexandria-Bold.woff2`}
   as="font"
   type="font/woff2"
   crossorigin
 />
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Alexandria-Bold.woff`}
+  href={`${baseUrl}fonts/Alexandria-Bold.woff`}
   as="font"
   type="font/woff"
   crossorigin
 />
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Alexandria-Light.woff2`}
+  href={`${baseUrl}fonts/Alexandria-Light.woff2`}
   as="font"
   type="font/woff2"
   crossorigin
 />
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Alexandria-Light.woff`}
+  href={`${baseUrl}fonts/Alexandria-Light.woff`}
   as="font"
   type="font/woff"
   crossorigin
 />
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Alexandria-Regular.woff2`}
+  href={`${baseUrl}fonts/Alexandria-Regular.woff2`}
   as="font"
   type="font/woff2"
   crossorigin
 />
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Alexandria-Regular.woff`}
+  href={`${baseUrl}fonts/Alexandria-Regular.woff`}
   as="font"
   type="font/woff"
   crossorigin
 />
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Alexandria-SemiBold.woff2`}
+  href={`${baseUrl}fonts/Alexandria-SemiBold.woff2`}
   as="font"
   type="font/woff2"
   crossorigin
 />
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Alexandria-SemiBold.woff`}
+  href={`${baseUrl}fonts/Alexandria-SemiBold.woff`}
   as="font"
   type="font/woff"
   crossorigin
 />
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Kablammo-Regular.woff2`}
+  href={`${baseUrl}fonts/Kablammo-Regular.woff2`}
   as="font"
   type="font/woff2"
   crossorigin
 />
 <link
   rel="preload"
-  href={`${import.meta.env.BASE_URL}fonts/Kablammo-Regular.woff`}
+  href={`${baseUrl}fonts/Kablammo-Regular.woff`}
   as="font"
   type="font/woff"
   crossorigin
@@ -201,24 +197,21 @@ const baseUrl = import.meta.env.BASE_URL.endsWith("/")
 <link
   rel="apple-touch-icon"
   sizes="180x180"
-  href={`${import.meta.env.BASE_URL}favicon/apple-touch-icon.png`}
+  href={`${baseUrl}favicon/apple-touch-icon.png`}
 />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href={`${import.meta.env.BASE_URL}favicon/favicon-32x32.png`}
+  href={`${baseUrl}favicon/favicon-32x32.png`}
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href={`${import.meta.env.BASE_URL}favicon/favicon-16x16.png`}
+  href={`${baseUrl}favicon/favicon-16x16.png`}
 />
-<link
-  rel="manifest"
-  href={`${import.meta.env.BASE_URL}favicon/site.webmanifest`}
-/>
+<link rel="manifest" href={`${baseUrl}favicon/site.webmanifest`} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
