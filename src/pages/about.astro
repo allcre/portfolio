@@ -1,61 +1,52 @@
 ---
-import Layout from "@/layouts/BlogPost.astro";
-const tags = ["engineering", "shopify", "software", "learning", "technology"];
-const description = `
-  <p class="text-left">
-    Photo by <a
-      href="https://unsplash.com/es/@francescobiancoo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-      >Francesco Bianco</a
-    > on <a
-      class=" text-pgreen font-bold"
-      href="https://unsplash.com/es/fotos/arte-mural-floral-dorado-y-azul-TVsgRyKJDc0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-      >Unsplash</a
-    >
-  </p>
-`;
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { Image } from "astro:assets";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}",
+);
 ---
 
-<Layout
-  tags={tags}
-  icon="web"
-  title="About Me"
-  description={description}
-  pubDate={new Date("December 15 2024")}
-  heroImage="/src/assets/fran.jpg"
->
-  <p>
-    Hi! I'm Allison Cretel, an engineer and student at Shopify. I'm passionate
-    about building innovative software solutions that make a real difference in
-    people's lives. Currently, I'm expanding my knowledge in modern web
-    technologies, distributed systems, and user experience design.
-  </p>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main class="container mx-auto md:px-10">
+      <div class="relative mb-20">
+        <span class="bg-black bg-opacity-25 w-full h-full absolute"></span>
+        <div class="absolute bottom-10 md:left-20 left-6">
+          <h1 class="text-4xl md:text-9xl font-semibold text-shadow text-white">
+            <span class="font-kablamo text-ppink">C</span>oming soon
+          </h1>
+        </div>
+        <Image
+          src={images["/src/assets/fran.jpg"]()}
+          alt="Coming soon"
+          class="h-96 w-full object-cover"
+        />
+      </div>
 
-  <p>
-    At Shopify, I work on challenging engineering problems that help merchants
-    around the world grow their businesses. From optimizing performance to
-    building new features, every day brings exciting opportunities to learn and
-    contribute to a platform that powers millions of businesses.
-  </p>
+      <div class="text-black px-6 md:px-0 max-w-2xl mx-auto">
+        <p class="text-center text-gray-600">
+          This page is under construction. Check back soon!
 
-  <p>
-    My journey in technology started with a curiosity about how things work
-    behind the scenes. That curiosity has led me to explore various areas of
-    software engineering, from frontend development with React and TypeScript to
-    backend systems with Ruby and Go. I'm particularly interested in the
-    intersection of engineering and user experience.
-  </p>
-
-  <p>
-    When I'm not coding, you can find me exploring new technologies through side
-    projects, contributing to open source, or sharing what I've learned through
-    blog posts and talks. I believe that the best way to grow as an engineer is
-    to continuously learn, experiment, and help others along their journey.
-  </p>
-
-  <p>
-    I'm always excited to connect with fellow engineers, discuss interesting
-    problems, and explore opportunities for collaboration. Feel free to reach
-    out if you'd like to chat about technology, engineering at scale, or
-    anything else that sparks your curiosity!
-  </p>
-</Layout>
+          <p class="text-center text-sm text-gray-400 mt-4">
+            Photo by <a
+              href="https://unsplash.com/es/@francescobiancoo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              class="text-pgreen font-bold">Francesco Bianco</a
+            > on <a
+              class="text-pgreen font-bold"
+              href="https://unsplash.com/es/fotos/arte-mural-floral-dorado-y-azul-TVsgRyKJDc0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              >Unsplash</a
+            >
+          </p>
+        </p>
+      </div>
+      <Footer />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+---
+import { Icon } from "astro-icon/components";
+
+const experiences = [
+  {
+    duration: "May 2025 - Present",
+    company: "Shopify",
+    team: "Ruby DX Team",
+    title: "Software Engineer, Infrastructure",
+    description:
+      "Building developer experience tools and type systems infrastructure. Working on RBS parser, Sorbet, and Tapioca to improve Ruby developer productivity.",
+    tech: ["C++", "C", "Ruby", "RBS", "Sorbet", "Tapioca"],
+    color: "bg-pgreen",
+  },
+  {
+    duration: "May 2024 - May 2025",
+    company: "Shopify",
+    team: "Sell in Minutes",
+    title: "Software Engineer, Growth",
+    description:
+      "Full-stack development on merchant onboarding and growth initiatives. Built scalable solutions to help merchants get started faster on the platform.",
+    tech: ["Kafka", "GraphQL", "Ruby on Rails", "React", "TypeScript"],
+    color: "bg-pblue",
+  },
+  {
+    duration: "August 2023 - May 2024",
+    company: "Shopify",
+    team: "Dev Degree Program",
+    title: "Dev Degree Intern",
+    description:
+      "8-month intensive training program on Shopify's tech stack. Gained hands-on experience with modern web technologies and e-commerce infrastructure.",
+    tech: ["GraphQL", "Ruby on Rails", "TypeScript", "React", "TDD"],
+    color: "bg-ppink",
+  },
+];
+---
+
+<section class="flex flex-col text-center gap-4">
+  <!-- <h2 class="text-4xl font-bold">Experience</h2> -->
+  <ul class="flex flex-col gap-6 py-20 max-w-3xl mx-auto">
+    {
+      experiences.map((exp) => (
+        <li class="flex gap-6 p-6 rounded-3xl border-1 border-black shadow-card hover:shadow-hover transition bg-white group">
+          <div class="flex-shrink-0">
+            <div
+              class={`w-16 h-16 ${exp.color} rounded-2xl border-1 border-black shadow-card1 group-hover:shadow-card transition flex items-center justify-center text-2xl`}
+            >
+              <Icon name="web" />
+            </div>
+          </div>
+          <div class="flex-1 text-left">
+            <p class="text-sm font-bold text-pblack">{exp.duration}</p>
+            <h3 class="text-xl font-bold text-black">{exp.company}</h3>
+            <p class="text-lg font-semibold text-pblack">{exp.title}</p>
+            <p class="text-sm text-gray-500 mb-2">{exp.team}</p>
+            <p class="text-sm text-gray-600 mb-3">{exp.description}</p>
+            <div class="flex flex-wrap gap-2">
+              {exp.tech.map((technology) => (
+                <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full border border-gray-300">
+                  {technology}
+                </span>
+              ))}
+            </div>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</section>

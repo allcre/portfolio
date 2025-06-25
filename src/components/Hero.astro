@@ -9,12 +9,13 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 <section class="py-20 flex md:flex-row flex-col px-4 md:px-0 gap-10 md:gap-0">
   <div class="flex flex-col gap-6 justify-start items-start md:w-1/2">
     <h1 class="text-pblack">Hi, my name is Allison Cretel</h1>
-    <p class="text-6xl font-bold">Engineering the future.</p>
+    <p class="text-6xl font-bold">Building for developers</p>
     <p>
-      I am Allison Cretel, an engineer and student at Shopify. I'm passionate
-      about building innovative solutions and learning new technologies to
-      create meaningful experiences.
+      I'm currently on the Ruby DX team at Shopify, working on type systems and
+      tooling. Passionate about AI agents for development and the future of how
+      we code.
     </p>
+    <!--
     <a
       rel="noopener noreferrer"
       href="https://linkedin.com/in/allison-cretel"
@@ -23,11 +24,16 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     >
       Get in touch
     </a>
+    -->
   </div>
   <div
     class="md:w-1/2 object-contain flex items-center justify-center p-10 group"
   >
-    <a rel="noopener noreferrer" href="https://shopify.com" target="_blank">
+    <a
+      rel="noopener noreferrer"
+      href="https://github.com/allcre"
+      target="_blank"
+    >
       <div
         class="bg-pblue border-3 border-black rounded-2xl h-52 w-60 shadow-card group-hover:shadow-hover flex transition relative"
       >
@@ -50,8 +56,8 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
         <div class="h-80 w-60 overflow-hidden relative -mt-30 rounded-2xl">
           <Image
             class="object-bottom absolute bottom-0 group-hover:scale-105 transition"
-            src={images["/src/assets/hero.png"]()}
-            alt="Allison Cretel, engineer + student"
+            src={images["/src/assets/mona-transparent.png"]()}
+            alt="Allison Cretel"
           />
         </div>
       </div>
